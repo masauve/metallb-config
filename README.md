@@ -59,5 +59,5 @@ Essentially, delegate the /29 subnet (with the equivalent netmask) to the IP of 
 I have deployed a basic mysql using the OCP quickstart and replaced the service with a service of type LoadBalancer.  MetalLB does the rest
 
 ```
-oc expose dc mysql --type=LoadBalance
+oc expose dc mysql --type=LoadBalancer
 ```
