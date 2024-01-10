@@ -47,14 +47,14 @@ spec:
 ```
 In this example we are using Level 2 advertisement.  BGP is also possible.
 
-# Step 3 - Configure Home Route
+# Step 3 - Configure Home Router
 This is very specific to the router brand and capabilities. Here is an example for my Asus router:
 
 ![asus](asus.png)
 
 Essentially, delegate the /29 subnet (with the equivalent netmask) to the IP of the OpenShift cluster and let OpenShift (metallb) handle these IPs
 
-# Step 4 - example:
+# Step 4 - Example:
 
 I have deployed a basic mysql using the OCP quickstart and replaced the service with a service of type LoadBalancer.  MetalLB does the rest
 
